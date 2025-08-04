@@ -41,6 +41,7 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
+                    <!-- View Mode Title -->
                     <TextView
                         android:id="@+id/tv_title"
                         android:layout_width="match_parent"
@@ -48,10 +49,25 @@
                         android:text="Entry Title"
                         android:textSize="28sp"
                         android:textStyle="bold"
-                        android:textColor="@color/primary_text"
+                        android:textColor="@color/text_blue"
                         android:fontFamily="sans-serif-medium"
                         android:lineSpacingMultiplier="1.2"
                         android:layout_marginBottom="8dp" />
+
+                    <!-- Edit Mode Title -->
+                    <EditText
+                        android:id="@+id/et_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Entry Title"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_orange"
+                        android:fontFamily="sans-serif-medium"
+                        android:lineSpacingMultiplier="1.2"
+                        android:layout_marginBottom="8dp"
+                        android:background="@null"
+                        android:visibility="gone" />
 
                     <TextView
                         android:id="@+id/tv_date"
@@ -59,7 +75,7 @@
                         android:layout_height="wrap_content"
                         android:text="Friday, March 15, 2024"
                         android:textSize="14sp"
-                        android:textColor="@color/secondary_text"
+                        android:textColor="@color/text_purple"
                         android:fontFamily="sans-serif" />
 
                 </LinearLayout>
@@ -100,17 +116,33 @@
                 android:background="@color/divider_color"
                 android:layout_marginBottom="24dp" />
 
-            <!-- Entry Content -->
+            <!-- View Mode Content -->
             <TextView
                 android:id="@+id/tv_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="This is where the journal entry content will be displayed. It can be a long text that spans multiple lines and paragraphs."
                 android:textSize="16sp"
-                android:textColor="@color/primary_text"
+                android:textColor="@color/text_green"
                 android:lineSpacingMultiplier="1.4"
                 android:fontFamily="sans-serif"
                 android:letterSpacing="0.01" />
+
+            <!-- Edit Mode Content -->
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is where the journal entry content will be displayed. It can be a long text that spans multiple lines and paragraphs."
+                android:textSize="16sp"
+                android:textColor="@color/text_red"
+                android:lineSpacingMultiplier="1.4"
+                android:fontFamily="sans-serif"
+                android:letterSpacing="0.01"
+                android:background="@null"
+                android:gravity="top"
+                android:minHeight="200dp"
+                android:visibility="gone" />
 
             <!-- Bottom Spacer -->
             <View

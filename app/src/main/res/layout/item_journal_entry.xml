@@ -33,7 +33,7 @@
                 android:text="Entry Title"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="@color/primary_text"
+                android:textColor="@color/text_blue"
                 android:maxLines="2"
                 android:ellipsize="end" />
 
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:text="This is a preview of the journal entry content..."
             android:textSize="14sp"
-            android:textColor="@color/secondary_text"
+            android:textColor="@color/text_green"
             android:lineSpacingMultiplier="1.2"
             android:maxLines="3"
             android:ellipsize="end"
@@ -75,7 +75,7 @@
                 android:layout_weight="1"
                 android:text="Mar 15, 2024"
                 android:textSize="12sp"
-                android:textColor="@color/tertiary_text"
+                android:textColor="@color/text_purple"
                 android:fontFamily="sans-serif-medium" />
 
             <TextView

@@ -12,6 +12,9 @@ import java.util.List;
 public interface JournalDao {
     @Query("SELECT * FROM journal_entries ORDER BY date DESC")
     LiveData<List<JournalEntry>> getAllEntries();
+    
+    @Query("SELECT * FROM journal_entries ORDER BY date DESC")
+    List<JournalEntry> getAllEntriesList();
 
     @Insert
     void insertEntry(JournalEntry entry);

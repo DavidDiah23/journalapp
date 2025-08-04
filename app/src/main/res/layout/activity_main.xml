@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -21,7 +22,7 @@
             android:text="My Daily Journal"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:textColor="@color/primary_text"
+            android:textColor="@color/text_blue"
             android:fontFamily="sans-serif-medium" />
 
         <ImageButton
@@ -170,7 +171,7 @@
             android:layout_height="wrap_content"
             android:text="No journal entries yet"
             android:textSize="18sp"
-            android:textColor="@color/secondary_text"
+            android:textColor="@color/text_green"
             android:layout_marginBottom="8dp" />
 
         <TextView
@@ -178,7 +179,7 @@
             android:layout_height="wrap_content"
             android:text="Tap the + button to create your first entry"
             android:textSize="14sp"
-            android:textColor="@color/secondary_text" />
+            android:textColor="@color/text_purple" />
 
     </LinearLayout>
 
